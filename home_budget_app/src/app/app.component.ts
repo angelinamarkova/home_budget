@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  getCurrentDate() : string {
+    let date = new Date();
+    let result = "Current time is: " + date;
+    return result;
+  };
+
 }
