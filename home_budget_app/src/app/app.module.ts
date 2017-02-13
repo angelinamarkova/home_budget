@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
-import { ROUTES } from './app.routes';
+import { HttpModule, JsonpModule } from '@angular/http';
+// import { RouterModule } from '@angular/router';
+// import { ROUTES } from './app.routes';
 
 import { SharedModule } from './shared/shared.module';
 import { HeaderModule } from './header/header.module';
@@ -20,7 +20,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES),
+    JsonpModule,
+    // RouterModule.forRoot(ROUTES),
     SharedModule,
     HeaderModule,
     MoviesModule

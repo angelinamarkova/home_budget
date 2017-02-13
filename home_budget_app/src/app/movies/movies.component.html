@@ -1,3 +1,12 @@
-<p>
-  movies works!
-</p>
+<div class="series">
+  <img src="{{series?.Poster}}"/>
+  <h1>
+      {{series?.Title}}
+  </h1>
+  <h2> <strong>Genre: </strong> {{series?.Genre}}</h2>
+  <h3><strong>Rating: </strong>{{series?.imdbRating}}</h3>
+  <p>{{series?.Plot}}</p>
+  <p><strong>Actors: </strong> {{series?.Actors}}</p>
+  <p><strong>Seasons: </strong> {{series?.totalSeasons}}</p>
+</div>
+
